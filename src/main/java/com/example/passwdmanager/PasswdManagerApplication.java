@@ -14,7 +14,7 @@ public class PasswdManagerApplication extends Application {
         // Use the "label" class from CSS for this label
         welcomeLabel.getStyleClass().add("label");
 
-        // same as before
+        // same as beforeee
         Label smallLabel = new Label("by xcel_dev");
         smallLabel.getStyleClass().add("small-label");
 

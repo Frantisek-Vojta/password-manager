@@ -1,0 +1,49 @@
+# =========================================
+# Java a JavaFX Projekt .gitignore
+# =========================================
+
+# Kompilované soubory
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA soubory a nastavení
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+# Eclipse soubory
+.project
+.classpath
+.settings/
+
+# Gradle soubory
+.gradle/
+build/
+bin/
+
+# Maven soubory
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Lokální nastavení vývojového prostředí
+*.log
+*.swp
+*.swo
+*.swn
+
+# Lokální databázové soubory nebo hesla
+database.txt
+*.db
+*.sqlite
+
+# OS-specifické soubory
+.DS_Store
+Thumbs.db
+desktop.ini

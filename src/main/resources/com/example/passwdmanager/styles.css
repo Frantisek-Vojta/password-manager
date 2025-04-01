@@ -1,0 +1,24 @@
+/* Celá scéna */
+.root {
+    -fx-background-color: #1e1e1e;
+}
+
+/* Styl nadpisu */
+.welcome-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #00ffcc;
+}
+
+/* Styl tlačítka */
+.hello-button {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+/* Efekt při najetí na tlačítko */
+.hello-button:hover {
+    -fx-background-color: #005bb5;
+}

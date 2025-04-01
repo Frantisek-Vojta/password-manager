@@ -1,5 +1,5 @@
 # =========================================
-# Java a JavaFX Projekt .gitignore
+# Java a JavaFX projekt - .gitignore
 # =========================================
 
 # Kompilované soubory
@@ -15,22 +15,15 @@ out/
 *.ipr
 *.iws
 
-# Eclipse soubory
-.project
-.classpath
-.settings/
+# Maven soubory a cache
+.mvn/
+mvnw
+mvnw.cmd
+target/
 
-# Gradle soubory
+# Gradle soubory (pokud bys někdy přešel na Gradle)
 .gradle/
 build/
-bin/
-
-# Maven soubory
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
 
 # Lokální nastavení vývojového prostředí
 *.log

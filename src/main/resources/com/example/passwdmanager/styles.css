@@ -1,24 +1,21 @@
-/* Celá scéna */
+/* Background and text style */
 .root {
-    -fx-background-color: #1e1e1e;
+    -fx-background-color: #1A1A1A; /* Black background */
+    -fx-text-fill: #6A1B9A; /* Purple text */
 }
 
-/* Styl nadpisu */
-.welcome-label {
-    -fx-font-size: 24px;
-    -fx-text-fill: #00ffcc;
+/* Title text style */
+h1 {
+    -fx-text-fill: #6A1B9A; /* Purple color */
+    -fx-font-size: 36px; /* Adjust font size */
+    -fx-alignment: center; /* Center align */
+    -fx-padding: 50px 0 15px 0; /* Space from top */
 }
 
-/* Styl tlačítka */
-.hello-button {
-    -fx-background-color: #0078d7;
-    -fx-text-fill: white;
-    -fx-font-size: 14px;
-    -fx-padding: 10px 20px;
-    -fx-border-radius: 5px;
-}
-
-/* Efekt při najetí na tlačítko */
-.hello-button:hover {
-    -fx-background-color: #005bb5;
+/* Subtext style */
+h2 {
+    -fx-text-fill: #6A1B9A; /* Purple color */
+    -fx-font-size: 14px; /* Smaller font size */
+    -fx-alignment: center; /* Center align */
+    -fx-padding: 15px 0 0 0; /* Space from main text */
 }

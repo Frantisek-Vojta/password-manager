@@ -1,42 +1,42 @@
 # =========================================
-# Java a JavaFX projekt - .gitignore
+# Java and JavaFX project - .gitignore
 # =========================================
 
-# Kompilované soubory
+# Compiled files
 *.class
 *.jar
 *.war
 *.ear
 
-# IntelliJ IDEA soubory a nastavení
+# IntelliJ IDEA files and settings
 .idea/
 *.iml
 out/
 *.ipr
 *.iws
 
-# Maven soubory a cache
+# Maven files and cache
 .mvn/
 mvnw
 mvnw.cmd
 target/
 
-# Gradle soubory (pokud bys někdy přešel na Gradle)
+# Gradle files (in case you switch to Gradle)
 .gradle/
 build/
 
-# Lokální nastavení vývojového prostředí
+# Local development environment settings
 *.log
 *.swp
 *.swo
 *.swn
 
-# Lokální databázové soubory nebo hesla
+# Local database files or passwords
 database.txt
 *.db
 *.sqlite
 
-# OS-specifické soubory
+# OS-specific files
 .DS_Store
 Thumbs.db
 desktop.ini

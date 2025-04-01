@@ -36,5 +36,5 @@ This is a **Password Manager** project currently in **Beta**. I am working on it
 ## Contribution:
 Feel free to fork the project and make contributions. Issues and pull requests are welcome.
 
-## License:
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## License
+- **SOON™**

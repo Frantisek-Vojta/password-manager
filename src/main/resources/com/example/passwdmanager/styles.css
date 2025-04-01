@@ -1,21 +1,20 @@
-/* Background and text style */
 .root {
-    -fx-background-color: #1A1A1A; /* Black background */
-    -fx-text-fill: #6A1B9A; /* Purple text */
+    -fx-background-color: #1A1A1A;
+    -fx-text-fill: #6A1B9A;
 }
 
-/* Title text style */
+
 h1 {
-    -fx-text-fill: #6A1B9A; /* Purple color */
-    -fx-font-size: 36px; /* Adjust font size */
-    -fx-alignment: center; /* Center align */
-    -fx-padding: 50px 0 15px 0; /* Space from top */
+    -fx-text-fill: #6A1B9A;
+    -fx-font-size: 36px;
+    -fx-alignment: center;
+    -fx-padding: 50px 0 15px 0;
 }
 
-/* Subtext style */
+
 h2 {
-    -fx-text-fill: #6A1B9A; /* Purple color */
-    -fx-font-size: 14px; /* Smaller font size */
-    -fx-alignment: center; /* Center align */
-    -fx-padding: 15px 0 0 0; /* Space from main text */
+    -fx-text-fill: #6A1B9A;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-padding: 15px 0 0 0;
 }

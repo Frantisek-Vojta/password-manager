@@ -9,14 +9,13 @@ import javafx.stage.Stage;
 public class PasswdManagerApplication extends Application {
     @Override
     public void start(Stage primaryStage) {
-        // Create a label with the text "Welcome to the app"
-        Label welcomeLabel = new Label("Welcome to the app");
+        // Create a label with the text
+        Label welcomeLabel = new Label("Welcome at Passwd Manager");
         // Use the "label" class from CSS for this label
         welcomeLabel.getStyleClass().add("label");
 
-        // Create a small label with the text "by xcel_dev"
+        // same as before
         Label smallLabel = new Label("by xcel_dev");
-        // Use the "small-label" class from CSS for this label
         smallLabel.getStyleClass().add("small-label");
 
         // Use a StackPane layout to place the labels

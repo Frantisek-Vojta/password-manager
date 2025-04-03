@@ -3,17 +3,14 @@
     -fx-text-fill: #6A1B9A;
 }
 
-
-
-h1 {
+.header {
     -fx-text-fill: #6A1B9A;
-    -fx-font-size: 36px;
+    -fx-font-size: 16px;
     -fx-alignment: center;
     -fx-padding: 50px 0 15px 0;
 }
 
-
-h2 {
+.subheader {
     -fx-text-fill: #6A1B9A;
     -fx-font-size: 14px;
     -fx-alignment: center;

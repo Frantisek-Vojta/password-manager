@@ -25,7 +25,7 @@ public class PasswdManagerApplication extends Application {
         // welcome text
         Label welcomeLabel = new Label("Welcome to the app");
         welcomeLabel.setFont(new Font(36));
-        welcomeLabel.setTextFill(Color.web("#6A1B9A")); // Fialová barva
+        welcomeLabel.setTextFill(Color.web("#6A1B9A")); // purple
 
         // show me
         Label smallLabel = new Label("by xcel_dev");

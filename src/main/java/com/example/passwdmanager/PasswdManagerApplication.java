@@ -22,67 +22,67 @@ public class PasswdManagerApplication extends Application {
     public void start(Stage primaryStage) {
 
 
-        // Vytvoření uvítacího textu (fialová)
+        // welcome text
         Label welcomeLabel = new Label("Welcome to the app");
         welcomeLabel.setFont(new Font(36));
         welcomeLabel.setTextFill(Color.web("#6A1B9A")); // Fialová barva
 
-        // Vytvoření menšího textu (fialová)
+        // show me
         Label smallLabel = new Label("by xcel_dev");
         smallLabel.setFont(new Font(14));
         smallLabel.setTextFill(Color.web("#6A1B9A")); // Fialová barva
 
-        // Vytvoření ProgressBar pro načítání
+        // loading bar
         ProgressBar progressBar = new ProgressBar(0);
         progressBar.setStyle("-fx-accent: #6A1B9A;");
         progressBar.setPrefWidth(300);
 
-        // Vytvoření layoutu pro text a progress bar
+        // color
         VBox layout = new VBox(10);
         layout.setStyle("-fx-background-color: #1A1A1A; -fx-alignment: center;");
         layout.getChildren().addAll(welcomeLabel, smallLabel, progressBar);
 
-        // Nastavení pozadí na černé
+        // bg color
         Scene scene = new Scene(layout, 400, 650);
         scene.setFill(Color.BLACK);
 
-        // Timeline pro animaci ProgressBaru
+        // timeline
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(0), e -> progressBar.setProgress(0)),
                 new KeyFrame(Duration.seconds(5), e -> progressBar.setProgress(1))
         );
-        timeline.setCycleCount(1); // Animace se spustí pouze jednou
-        timeline.play(); // Spustí animaci
+        timeline.setCycleCount(1); // only once start
+        timeline.play(); // start the loading
 
-        // Po 5 sekundách spustíme "výbuch" přechod a tlačítka
+        // after 5s it will show the main screen
         timeline.setOnFinished(event -> {
-            // Vytvoření tlačítek
+            // buttons
             Button addButton = new Button("Přidat heslo");
             addButton.setStyle("-fx-background-color: #6A1B9A; -fx-text-fill: white;");
             Button showButton = new Button("Zobrazit heslo");
             showButton.setStyle("-fx-background-color: #6A1B9A; -fx-text-fill: white;");
 
-            // Vytvoření HBox pro tlačítka (vedle sebe)
+            // buttons vedle sebe
             HBox buttonsBox = new HBox(10);
             buttonsBox.setStyle("-fx-alignment: center;");
             buttonsBox.getChildren().addAll(addButton, showButton);
 
-            // Převedení na nový přechodový efekt (výbuch nebo fade)
-            layout.getChildren().clear(); // Odstraníme původní obsah
-            layout.getChildren().addAll(buttonsBox); // Přidáme tlačítka
+            // effect
+            layout.getChildren().clear(); // clear the text
+            layout.getChildren().addAll(buttonsBox); // buttons add
 
-            // Animace FadeTransition pro přechod
-            layout.setOpacity(0); // Nastavíme počáteční opacitu na 0
-            layout.setStyle("-fx-background-color: #1A1A1A;"); // Fialová barva pozadí
+            // animation
+            layout.setOpacity(0); // oppacity 0
+            layout.setStyle("-fx-background-color: #1A1A1A;"); // purple
 
-            // Animace FadeTransition pro přechod
+            // animation
             javafx.animation.FadeTransition fadeIn = new javafx.animation.FadeTransition(Duration.seconds(1), layout);
             fadeIn.setFromValue(0);
             fadeIn.setToValue(1);
             fadeIn.play();
         });
 
-        // Zobrazení okna
+        // show window
         primaryStage.setTitle("Password Manager");
         primaryStage.setScene(scene);
         primaryStage.show();

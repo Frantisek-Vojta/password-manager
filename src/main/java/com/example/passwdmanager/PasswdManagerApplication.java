@@ -80,8 +80,13 @@ public class PasswdManagerApplication extends Application {
             fadeIn.setFromValue(0);
             fadeIn.setToValue(1);
             fadeIn.play();
+
+            // todo add moving loading bar cuz its cool 
+        
         });
 
+        
+        
         // show window
         primaryStage.setTitle("Password Manager");
         primaryStage.setScene(scene);
